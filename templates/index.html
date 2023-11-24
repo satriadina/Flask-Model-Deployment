@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Iris Classification</title>
+</head>
+
+<body>
+  <div>
+    <h1>Iris Classification</h1>
+    <form method="post">
+      <table>
+        <tbody>
+          <tr>
+            <td><label for="sepal_length">Sepal Length:</label></td>
+            <td><input type="number" id="sepal_length" name="sepal_length"><br></td>
+          </tr>
+          <tr>
+            <td><label for="sepal_width">Sepal Width:</label></td>
+            <td><input type="number" id="sepal_width" name="sepal_width"><br></td>
+          </tr>
+          <tr>
+            <td><label for="petal_length">Petal Length:</label></td>
+            <td><input type="number" id="petal_length" name="petal_length"><br></td>
+          </tr>
+          <tr>
+            <td><label for="petal_width">Petal Width:</label></td>
+            <td><input type="number" id="petal_width" name="petal_width"><br></td>
+          </tr>
+        </tbody>
+      </table>
+      <input class="submit-button" type="submit" value="Submit">
+    </form>
+    {% if PRED_RESULT %}
+    <p>Hasil Prediksi: {{PRED_RESULT}}</p>
+    {% endif %}
+  </div>
+</body>
+
+</html>
